@@ -41,7 +41,7 @@ public class TreeMapExample {
         scores.remove("Bob");
 
         // Check if a key-value pair was removed
-        boolean removed = scores.containsKey("Bob");
+        boolean removed = !(scores.containsKey("Bob"));
         System.out.println("Was Bob's score removed? " + removed);
 
         // Print the size of the map
